@@ -67,6 +67,10 @@ void draw() {
         buttonPressed = false;
         buttonState = false; // Button is released
       }
+
+      float hue = map(p, 0, analogMax, 0, 255);
+      colorMode(HSB, 255);
+      tint(hue, 150, 255);  // Apply a tint with hue based on potentiometer value
     }
   }
 
